@@ -1,0 +1,282 @@
+/* _lcid="1036" _version="16.0.4316"
+    _LocalBinding */
+.ms-taxonomy-width
+{
+	width: 386px;
+}
+.ms-taxonomy span
+{
+	display:inline !important;
+}
+.ms-taxonomy .ms-taxonomy-control-holder
+{
+	overflow: hidden;
+}
+.ms-taxonomy-fieldeditor
+{
+	word-wrap:break-word;
+	word-break:break-all;
+	white-space: normal;
+	/* [ReplaceColor(themeColor: "BodyText")] */ color: #444;
+}
+.ms-taxonomy-fieldeditor-grid
+{
+	border:none;
+	padding:1px;
+}
+.ms-taxonomy .ms-taxonomy-control-holder .ms-taxonomy-fieldeditor
+{
+	overflow: auto;
+	overflow-x: hidden;
+}
+.ms-taxonomy .ms-taxonomy-fieldeditor .ms-taxonomy-writeableregion
+{
+	outline: none;
+}
+.ms-taxonomy .ms-taxonomy-disabled
+{
+	background:#C6C6C6;
+}
+.ms-taxonomy .ms-taxonomy-fieldeditor .invalid-text
+{
+	border-bottom: dashed 1px #FF0000;
+	padding: 0px;
+	margin: 0px;
+	color: #FF0000;
+}
+.ms-taxonomy .ms-taxonomy-writeableregion
+{
+	padding: 2px;
+	min-height:1em;
+	overflow: visible;
+}
+.ms-taxonomy .ms-taxonomy-fieldeditor .valid-text
+{
+	text-decoration: underline;
+}
+.ms-taxonomy .ms-taxonomy-browser-button
+{
+	float: right;
+	padding: 1px 2px 1px 2px;
+	vertical-align: top;
+}
+.ms-taxonomy .ms-taxonomy-browser-button:hover
+{
+	cursor:hand;
+}
+.FrameForTrees
+{
+	overflow: auto;
+	margin:20px 0px 0px 0px;
+	height: 175px;
+	max-height: 175px;
+	width: 100%;
+	border: thin inset;
+	background:#FFFFFF;
+}
+.ms-taxonomy-disabled-text
+{
+	color: #C6C6C6;
+}
+.ms-taxonomy-hidden
+{
+	display: none;
+}
+.ms-taxonomy-suggestion-container
+{
+	background: #FFFFFF;
+	color: #000000;
+	border:thin;
+	border-style:ridge;
+	width: 100%;
+	overflow:hidden;
+	position:absolute;
+	padding-bottom: 15px;
+	z-index: 1;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder
+{
+	border:none;
+	width: 100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+	position:static;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-panel-resizer
+{
+	cursor: se-resize;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-suggestion-group-title
+{
+	background: #EBF3FF;
+	font-weight: bold; 
+	font-size: 8pt; 
+	padding: 2px 0px 2px 7px;
+	border-width: 0px 0px 1px 0px;
+	border-style: ridge;
+	border: #222222;
+	color: #818187;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-table .ms-taxonomy-column .suggestion-path
+{
+	font-size: 8pt; 
+	margin-left: 5px;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-table .ms-taxonomy-column .suggestion-non-match-text
+{
+	font-size: 8pt; 
+	display: inline;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-table .ms-taxonomy-column .suggestion-match-text
+{
+	background-color: #FFFF00;
+	font-size: 8pt; 
+	display: inline;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-table
+{
+	border-collapse: collapse;
+	cursor: pointer;
+	width: 100%;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-table .ms-taxonomy-column
+{
+	white-space: nowrap;
+	padding: 1px 1px 1px 16px;
+	border: none;
+	margin: 0px;
+	vertical-align:top;
+}
+.ms-taxonomy-suggestion-container .ms-taxonomy-suggestion-holder .ms-taxonomy-suggestion-group .ms-taxonomy-highlighted
+{
+	background: #FDEEDB;
+}
+.ms-taxonomy-ambiguous-table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.ms-taxonomy-ambiguous-highlighted
+{
+	background: #FFE6A0 !important;
+	color: #000000;
+	border-bottom: 1px solid #FFE6A0;
+	border-top: 1px solid #FFE6A0;
+	cursor: pointer;
+}
+.ms-taxonoy-ambiguous-header
+{
+	white-space: nowrap;
+	color: #949494;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #F3F3F3;
+	font-size: 8pt; 
+	text-align: left;
+}
+.ms-taxonomy-ambiguous-column
+{
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 8pt; 	
+	cursor: pointer;
+}
+.ms-taxonomy-ambiguous-alternate
+{
+	background-color: #F9F9F9;
+	color: #000000;
+}
+.override-dialgmaster
+{
+	border:0px;
+	padding:7px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.TaggingLinkWidth
+{
+	width:120px;
+	vertical-align:top;
+}
+.wt-treecontainer
+{
+	padding-top: 0px;
+}
+.wt-error-section
+{
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 8pt; 
+	width: 100%;
+}
+.wt-editor-section
+{
+	padding-top: 10px;
+	height: 72px;
+	width: 100%;
+}
+.wt-addnewbutton
+{
+	float: left;
+	margin-top: 10px;
+	font-size: 8pt; 	
+}
+.wt-feedbackbutton
+{
+	float: right;
+	margin-top: 10px;
+	font-size: 8pt; 	
+}
+.wt-addbutton
+{
+	width: 150px;
+	margin-right: 15px;
+	font-size: 8pt; 	
+}
+.wt-float-left
+{
+	float: left;
+}
+.wt-float-right
+{
+	float: right;
+}
+.wt-fieldeditor
+{
+	width: 65%;	
+}
+.wt-dlgContent
+{
+	background-color: #7F9DB9 !important;
+}
+.wt-dlgTitle
+{
+	background-color: #7F9DB9 !important;
+}
+.wt-dlgTitleText
+{
+	color: #ffffff !important;
+}
+.wt-overflow-hidden
+{
+	overflow: hidden !important;
+	*overflow: visible !important;
+	*overflow-x: hidden !important;
+}
+.wt-addlink
+{
+	color: Blue;
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: hand;
+}
+.aspNetHidden
+{
+	display:none;
+}
