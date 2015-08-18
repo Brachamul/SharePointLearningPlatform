@@ -1,0 +1,6 @@
+.ms-tileview-tile-content .ms-tileview-tile-detailsBox {
+	transition: top .5s;
+	top: 100px;
+}
+
+.ms-tileview-tile-content:hover .ms-tileview-tile-detailsBox { top: 0; }

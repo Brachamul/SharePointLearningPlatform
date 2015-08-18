@@ -1,11 +1,11 @@
 ﻿@font-face
 {
 font-family:"SPO365Icons";
-src:url("/_layouts/15/fonts/Office365Icons.eot");
-src:url("/_layouts/15/fonts/Office365Icons.eot?#iefix") format("embedded-opentype"),
-url("/_layouts/15/fonts/Office365Icons.woff") format("woff"),
-url("/_layouts/15/fonts/Office365Icons.ttf") format("truetype"),
-url("/_layouts/15/fonts/Office365Icons.svg#web") format("svg");
+src:url("Office365Icons.eot");
+src:url("Office365Icons.eot?#iefix") format("embedded-opentype"),
+url("Office365Icons.woff") format("woff"),
+url("Office365Icons.ttf") format("truetype"),
+url("Office365Icons.svg#web") format("svg");
 font-style:normal;
 font-weight:normal;
 }
