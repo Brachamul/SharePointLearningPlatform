@@ -9,10 +9,10 @@ jQuery(function() {
 	$('.ms-cui-tabContainer').hide()
 
 	// Onglets
-	$('[id*="Ribbon"][role="tab"]').click(function(){
+	$('[id*="Ribbon"].ms-cui-tt').click(function(){
 		if ($(this).hasClass('ms-cui-tt-s')) {
 			$(this).removeClass('ms-cui-tt-s')
-			$('.ms-cui-tabContainer').fadeOut()
+			$('.ms-cui-tabContainer').slideUp('fast')
 		} else {
 			$('.ms-cui-tt-s').removeClass('ms-cui-tt-s')
 			$(this).addClass('ms-cui-tt-s')
@@ -20,7 +20,7 @@ jQuery(function() {
 			$('.ms-cui-tabContainer').hide()
 			id = $(this).attr("id").replace("-title", "")
 			$('[id*="' + id + '"][role="tabpanel"]').show()
-			$('.ms-cui-tabContainer').fadeIn()
+			$('.ms-cui-tabContainer').slideDown('fast')
 		}
 	})
 
