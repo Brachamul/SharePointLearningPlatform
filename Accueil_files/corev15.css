@@ -487,7 +487,6 @@ max-height:64px;
 #s4-titlerow
 {
 margin-bottom:27px;
-height:64px;
 }
 #titleAreaBox
 {
@@ -502,7 +501,6 @@ margin:auto 20px;
 .ms-core-pageTitle
 {
 font-size:2.77em;
-white-space:nowrap;
 }
 .ms-core-pageTitle a:hover,
 .ms-core-pageTitle a:active
@@ -6911,11 +6909,11 @@ margin-right:2px;
 .ms-breadcrumb-top
 {
 white-space:nowrap;
+display: none;
 }
 .ms-breadcrumb-box
 {
-width:100%;
-height:64px;
+float: left;
 }
 .ms-breadcrumb-dropdownBox
 {
@@ -14436,6 +14434,7 @@ padding-bottom:8px;
 #contentRow
 {
 padding-top:19px;
+clear: both;
 }
 #sideNavBox
 {

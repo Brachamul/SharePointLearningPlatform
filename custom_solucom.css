@@ -4,3 +4,80 @@
 }
 
 .ms-tileview-tile-content:hover .ms-tileview-tile-detailsBox { top: 0; }
+
+
+#DeltaPlaceHolderMain { margin-top: -1.3em; }
+
+.ms-navedit-editLinksText { display: none; }
+
+.ms-breadcrumb-box { width: calc(100% - (200px)); }
+
+#DeltaPlaceHolderMain { width: 100%; }
+
+#globalNavBox, #s4-ribbonrow { height: auto !important; }
+
+#contentBox { min-width: 0; }
+
+/* Menu contextuel de la roue crantée */
+.o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
+.o365button:hover { background-color: #cde6f7; text-decoration: none; } /* Quand on hover sur un des boutons */
+
+input.ms-cui-cb-input { height: 21px; }
+
+.ms-cui-dd-arrow-button span { top: 40%; }
+
+body { position: relative; }
+
+#solucom-modal {
+	display: none;
+	background-color: rgba(0,0,0,0.3);
+	height: 100%; width: 100%;
+	position: absolute; top: 0; left: 0;
+	z-index: 101;
+}
+
+#solucom-modal .container {
+	background-color: white;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 1px 1px 20px -5px #000;
+}
+
+#solucom-modal img {
+	display: block;
+	float: left;
+	max-width: 40%;
+	max-height: 150px;
+}
+
+#solucom-modal .content {
+	float: left; width: calc(60% - 1rem);
+	padding: 1rem 0 1rem 1rem;
+}
+
+#solucom-modal .content:before {
+	content: "Shupert the SharePoint Shrimp :";
+	display: block;
+	font-weight: bold;
+	color: #3FA9F5;
+}
+
+#solucom-modal .container:hover { cursor: pointer; }
+
+#solucom-modal .container:after {
+	content: "x";
+	font-weight: bold;
+	color: #ccc;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	transition: all 0.5s;
+}
+
+#solucom-modal .container:hover:after {
+	color: #3FA9F5;
+}
