@@ -22,6 +22,8 @@
 .o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
 .o365button:hover { background-color: #cde6f7; text-decoration: none; } /* Quand on hover sur un des boutons */
 
+div[class^="o365cs-nav-"] { background-color: #0078d7; }
+
 input.ms-cui-cb-input { height: 21px; }
 
 .ms-cui-dd-arrow-button span { top: 40%; }
