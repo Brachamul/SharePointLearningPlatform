@@ -56,4 +56,6 @@ jQuery(function() {
 
 	$('#DeltaPlaceHolderMain').load('content_accueil.html')
 
+	$('#footer').html("Notre objectif : remplacer l'interview du prédecesseur de notre client par son interview à lui !")
+
 });
