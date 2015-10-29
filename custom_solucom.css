@@ -20,7 +20,7 @@
 
 /* Menu contextuel de la roue crantée */
 .o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
-.o365button:hover { text-decoration: none; } /* Quand on hover sur un des boutons */
+.o365cs-contextMenuItem:hover { text-decoration: none; background-color: #cde6f7;} /* Quand on hover sur un des boutons */
 
 div[class^="o365cs-nav-"] { background-color: #0072c6; }
 
@@ -84,4 +84,12 @@ body { position: relative; }
 	color: #3FA9F5;
 }
 
-#footer { position: absolute; bottom: 1rem; left: 50%; color: white; text-align: center; transform: translateX(-50%); padding: 1rem 2rem; background-color: #0072c6; box-shadow: 1px 1px 20px -5px #000; transition: all 0.5s;}
+#footer { position: absolute; bottom: 0; color: white; text-align: center; padding: 1rem 2rem; background-color: #0072c6; box-shadow: 1px 1px 20px -5px #000; transition: all 0.5s; box-sizing: border-box; width: 100%; }
+
+#welcome-news {  }
+#welcome-news .news-row { }
+#welcome-news .article { float: left; padding: 1rem 2rem; background-color: #0072c6; color: white; border-right: 1px solid white; border-bottom: 1px solid white; width: 50%; box-sizing: border-box; height: 100%; transition: all .5s; min-height: 17em; cursor: pointer; }
+#welcome-news .article h1 { color: white; }
+#welcome-news .article:hover { background-color: #004498; }
+
+.anchor { clear: both; }
