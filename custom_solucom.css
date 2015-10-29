@@ -84,7 +84,7 @@ body { position: relative; }
 	color: #3FA9F5;
 }
 
-#footer { position: absolute; bottom: 0; color: white; text-align: center; padding: 1rem 2rem; background-color: #0072c6; box-shadow: 1px 1px 20px -5px #000; transition: all 0.5s; box-sizing: border-box; width: 100%; }
+#footer { position: fixed; bottom: 0; color: white; text-align: center; padding: 1rem 2rem; background-color: #0072c6; box-shadow: 1px 1px 20px -5px #000; transition: all 0.5s; box-sizing: border-box; width: 100%; }
 
 #welcome-news {  }
 #welcome-news .news-row { }
