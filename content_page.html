@@ -3,6 +3,15 @@
 	$('[data-tab="text-formatter"], [data-tab="text-inserter"]').hide()
 	$('#DeltaPlaceHolderPageTitleInTitleArea').html('Interview de Robert LECLIENT-DAVANT : "Le Digital devient 3.0"')
 	$('.ms-cui-topBar2').slideDown()
+
+	$('.no-clicky').click(function(){
+		var response = "Mais pourquoi donc avez-vous cliqué ici ?"
+		var context = $(this).attr("data-noclicky")
+		if (context) response = context
+		openModal(response)
+		return false
+		$(this).children().click(function(){ return false })
+	})
 	
 </script>
 
@@ -16,4 +25,3 @@
 
 <p>Nam et velit nunc. Sed pretium urna eget ex ullamcorper consectetur. Praesent lectus turpis, vehicula eu molestie id, egestas sit amet diam. Vivamus sit amet pretium ex, et vehicula lacus. Curabitur eget nunc ipsum. Quisque tempor fringilla sem, in imperdiet felis porttitor in. Etiam consectetur tincidunt tincidunt. Vivamus vulputate eu leo ut egestas. Ut ut lectus tincidunt, semper nisi at, mattis odio. Sed fringilla vestibulum arcu. Etiam pellentesque metus id sapien hendrerit, a pulvinar magna ullamcorper. Etiam non turpis nec tellus rhoncus scelerisque a in urna.</p>
 
-<script src="custom_solucom.js" type="text/javascript"></script>
