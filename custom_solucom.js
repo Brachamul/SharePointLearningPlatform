@@ -21,14 +21,6 @@ jQuery(function() {
 		}
 	})
 
-	$('.no-clicky').click(function(){
-		var response = "Mais pourquoi donc avez-vous cliqué ici ?"
-		var context = $(this).attr("data-noclicky")
-		if (context) response = context
-		openModal(response)
-		return false
-		$(this).children().click(function(){ return false })
-	})
 
 	$('.o365cs-nav-contextMenu').hide()
 	$('#O365_MainLink_Settings').click(function(){
@@ -42,25 +34,10 @@ jQuery(function() {
 
 	$('body').prepend('<div id="solucom-modal"><div class="container"><div class="subcontainer"><img src="shupert.png"/><div class="content"></div></div></div></div>')
 
-	function openModal(text) {
-		$('#solucom-modal .content').html(text)
-		$('#solucom-modal').fadeIn('fast')
-	}
-
-	$('#solucom-modal').click( function() {
-		$(this).fadeOut('fast')
-	})
-
-	$(document).keyup(function(e) {
-		if (e.keyCode == 27) $('#solucom-modal').fadeOut('fast')
-	});
-
 	$('#DeltaPlaceHolderMain').load('content_accueil.html')
 
 	$('#footer').html("<strong>Notre objectif</strong> : remplacer l'interview du prédecesseur de notre client par son interview à lui !")
 
-	$('.go-page').click(function(){
-		$('#DeltaPlaceHolderMain').load('content_page.html')
-	})
+	$.getScript('clickHacking.js')
 
-});
+})

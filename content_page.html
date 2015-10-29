@@ -1,20 +1,3 @@
-<script>
-
-	$('[data-tab="text-formatter"], [data-tab="text-inserter"]').hide()
-	$('#DeltaPlaceHolderPageTitleInTitleArea').html('Interview de Robert LECLIENT-DAVANT : "Le Digital devient 3.0"')
-	$('.ms-cui-topBar2').slideDown()
-
-	$('.no-clicky').click(function(){
-		var response = "Mais pourquoi donc avez-vous cliqué ici ?"
-		var context = $(this).attr("data-noclicky")
-		if (context) response = context
-		openModal(response)
-		return false
-		$(this).children().click(function(){ return false })
-	})
-	
-</script>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui convallis ex aliquam mollis ut eu mauris. Mauris et urna nec nibh elementum faucibus. Nunc et porta ex. Maecenas eu lacus nisi. Nunc tempor augue a leo maximus, nec accumsan dui imperdiet. Phasellus ac nisi at nibh accumsan tincidunt. Nulla varius gravida imperdiet.</p>
 
 <p>In tempor dolor in mollis condimentum. Nulla dignissim bibendum elit, eu dapibus leo feugiat at. Praesent sit amet nulla tincidunt, convallis neque tempor, sollicitudin tellus. Proin fermentum dui sit amet arcu sagittis posuere. Integer quis sapien eget sapien luctus rutrum. Sed mattis lorem justo, in posuere quam consectetur sit amet. Vivamus tincidunt erat suscipit commodo mollis. Nam ut viverra quam. Sed lacinia, lectus ut feugiat suscipit, sem felis aliquam erat, a mattis dolor ipsum at turpis. Suspendisse felis elit, blandit non purus molestie, scelerisque dapibus augue. Cras faucibus sem nec metus vulputate, nec finibus mauris consectetur. Donec quis orci velit. Integer condimentum neque nisl.</p>
@@ -25,3 +8,12 @@
 
 <p>Nam et velit nunc. Sed pretium urna eget ex ullamcorper consectetur. Praesent lectus turpis, vehicula eu molestie id, egestas sit amet diam. Vivamus sit amet pretium ex, et vehicula lacus. Curabitur eget nunc ipsum. Quisque tempor fringilla sem, in imperdiet felis porttitor in. Etiam consectetur tincidunt tincidunt. Vivamus vulputate eu leo ut egestas. Ut ut lectus tincidunt, semper nisi at, mattis odio. Sed fringilla vestibulum arcu. Etiam pellentesque metus id sapien hendrerit, a pulvinar magna ullamcorper. Etiam non turpis nec tellus rhoncus scelerisque a in urna.</p>
 
+<script>
+
+	$('[data-tab="text-formatter"], [data-tab="text-inserter"]').hide()
+	$('#DeltaPlaceHolderPageTitleInTitleArea').html('Interview de Robert LECLIENT-DAVANT : "Le Digital devient 3.0"')
+	$('.ms-cui-topBar2').slideDown()
+
+	$.getScript('clickHacking.js')
+	
+</script>
