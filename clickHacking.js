@@ -1,11 +1,11 @@
 jQuery(function() {
 	
-	$('.no-clicky').click(function(){
+	$('.no-clicky').each(function(){
 		var response = "Mais pourquoi donc avez-vous cliqué ici ?"
 		var context = $(this).attr("data-noclicky")
 		if (context) response = context
-		openModal(response)
-		return false
+		$(this).click(function(){ openModal(response); return false })
+		$(this).find('*').click(function(){ openModal(response); return false })
 	})
 
 	$('.no-clicky *').click(function(){ return false })
