@@ -1,11 +1,11 @@
 jQuery(function() {
 	
-	$('.no-clicky').each(function(){
+	$('.no-clicky:not(".disable-clicky")').each(function(){
 		var response = "Mais pourquoi donc avez-vous cliqué ici ?"
 		var context = $(this).attr("data-noclicky")
 		if (context) response = context
 		$(this).click(function(){ openModal(response); return false })
-		$(this).find('*:not(".no-clicky")').click(function(){ openModal(response); return false })
+		$(this).find('*:not(".no-clicky"):not(".disable-clicky")').click(function(){ openModal(response); return false })
 	})
 
 	$('.no-clicky *').click(function(){ return false })
@@ -16,7 +16,7 @@ jQuery(function() {
 	}
 
 	$('#solucom-modal').click( function() {
-		$(this).fadeOut('fast')
+		closeModal()
 	})
 
 	$('.go-page').click(function(){
@@ -24,7 +24,16 @@ jQuery(function() {
 	})
 
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27) $('#solucom-modal').fadeOut('fast')
+		if (e.keyCode == 27) closeModal()
 	});
 
+	$('#O365_MainLink_Settings').click(function(){
+		$(this).addClass('disable-clicky')
+	})
+
 })
+
+function closeModal() {
+	$('#solucom-modal').fadeOut('fast')
+	$('.o365cs-nav-contextMenu').slideUp('fast')
+}

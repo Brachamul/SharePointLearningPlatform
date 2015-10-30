@@ -21,7 +21,7 @@
 #no-clicky:hover { cursor: pointer; }
 
 /* Menu contextuel de la roue crantée */
-.o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
+.o365cs-nav-contextMenu { display: none; right: 164px !important; left: auto !important; } /* Par défaut, ce menu est caché */
 .o365button.o365cs-contextMenuItem { background-color: white; }
 .o365button.o365cs-contextMenuItem:hover { text-decoration: none; background-color: #cde6f7;} /* Quand on hover sur un des boutons */
 
@@ -37,8 +37,9 @@ body { position: relative; }
 	display: none;
 	background-color: rgba(0,0,0,0.3);
 	height: 100%; width: 100%;
+	min-height: 100vh;
 	position: absolute; top: 0; left: 0;
-	z-index: 101;
+	z-index: 2002; /* Au dessus du menu */
 }
 
 #solucom-modal .container {
@@ -98,3 +99,6 @@ hr { margin: 2em 0; }
 #welcome-news .article:hover { background-color: #004498; }
 
 .anchor { clear: both; }
+
+
+.toggle-edit-mode { cursor: pointer; }

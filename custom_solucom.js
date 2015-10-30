@@ -24,11 +24,11 @@ jQuery(function() {
 
 	$('.o365cs-nav-contextMenu').hide()
 
-//	$('#O365_MainLink_Settings').click(function(){
-//		$('.o365cs-nav-contextMenu').slideToggle('fast')
-//	})
+	$('#O365_MainLink_Settings').click(function(){
+		$('.o365cs-nav-contextMenu').slideToggle('fast')
+	})
 
-	$('.edit-page').click(function() {
+	$('.toggle-edit-mode').click(function() {
 		alert("Go mode édition")
 		return false
 	})

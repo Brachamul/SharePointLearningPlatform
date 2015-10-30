@@ -553,8 +553,8 @@
 
 
 									<div class="o365cs-nav-topItem o365cs-rsp-tn-hideIfAffordanceOff">
-										<button class="o365cs-nav-item o365cs-nav-button o365cs-topnavText ms-bgc-tdr-h o365button" id=
-										"O365_MainLink_Settings" title=
+										<button class="o365cs-nav-item o365cs-nav-button o365cs-topnavText ms-bgc-tdr-h o365button no-clicky" id=
+										"O365_MainLink_Settings" data-noclicky="<p>C'est le menu de la <strong>roue crantée</strong>.</p><p>Il permet notamment de modifier la page actuelle, de rentrer dans le back-office du site, ou de modier ses paramètres personnels.</p>" title=
 										"Ouvrir le menu Paramètres pour accéder aux paramètres personnels et à ceux des applications" type=
 										"button"><span class="wf wf-size-x18 wf-family-o365"></span></button>
 									</div>
@@ -865,13 +865,8 @@
 												"s4-clust ms-promotedActionButton-icon" style=
 												"height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;"><img alt="Suivre" src=
 												"Accueil_files/spcommon.png" style="position: absolute; left: -218px; top: -48px;"></span><span class=
-												"ms-promotedActionButton-text">Suivre</span></a> <a class="ms-rtefocus-invalid ms-promotedActionButton"
-												href="javascript:" id="ctl00_PageStateActionButton" onclick=
-												"CoreInvoke(&#39;PageActionClick&#39;, this);return false;" onmouseout=
-												"this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsetx&#39;) : this.getAttribute(&#39;_saveoffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsety&#39;) : this.getAttribute(&#39;_saveoffsety&#39;)) + &#39;px&#39;;"
-												onmouseover=
-												"this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsetx&#39;) : this.getAttribute(&#39;_savehoveroffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsety&#39;) : this.getAttribute(&#39;_savehoveroffsety&#39;)) + &#39;px&#39;;"
-												title="Modifier"><span class="s4-clust ms-promotedActionButton-icon" style=
+												"ms-promotedActionButton-text">Suivre</span></a> <a class="ms-rtefocus-invalid ms-promotedActionButton toggle-edit-mode"
+												id="ctl00_PageStateActionButton"	title="Modifier"><span class="s4-clust ms-promotedActionButton-icon" style=
 												"height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;"><img alt="Modifier" src=
 												"Accueil_files/spcommon.png" style="position: absolute; left: -236px; top: -84px;"></span><span class=
 												"ms-promotedActionButton-text">Modifier</span></a> <span class="ms-qatbutton" id=
@@ -915,8 +910,8 @@
 											"Ribbon.WikiPageTab.EditAndCheckout-LargeMedium-0"><span class="ms-cui-row-onerow" id=
 											"Ribbon.WikiPageTab.EditAndCheckout-LargeMedium-0-0"><span class="ms-cui-ctl-large" id=
 											"Ribbon.WikiPageTab.EditAndCheckout.SaveEdit-Large"><span class="ms-cui-mrusb-selecteditem"><a class=
-											"ms-cui-ctl-large" href="javascript:;" id="Ribbon.WikiPageTab.EditAndCheckout.SaveEdit-SelectedItem"
-											onclick="return false;" style="height: auto;"><span class="ms-cui-ctl-largeIconContainer"><span class=
+											"ms-cui-ctl-large toggle-edit-mode" id="Ribbon.WikiPageTab.EditAndCheckout.SaveEdit-SelectedItem"
+											style="height: auto;"><span class="ms-cui-ctl-largeIconContainer"><span class=
 											" ms-cui-img-32by32 ms-cui-img-cont-float"><img alt="" src="Accueil_files/formatmap32x32.png" style=
 											"top: -171px; left: -137px;"></span></span> <span class="ms-cui-ctl-largelabel" style=
 											"height: auto;">Modifier</span></a></span> <a class="ms-cui-ctl-a2" href="javascript:;" onclick=
