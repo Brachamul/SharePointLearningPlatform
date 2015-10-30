@@ -6,8 +6,9 @@ jQuery(function() {
 		if (context) response = context
 		openModal(response)
 		return false
-		$(this).children().click(function(){ return false })
 	})
+
+	$('.no-clicky *').click(function(){ return false })
 
 	function openModal(text) {
 		$('#solucom-modal .content').html(text)
