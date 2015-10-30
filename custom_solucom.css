@@ -18,7 +18,7 @@
 
 #contentBox { min-width: 0; }
 
-#no-clicky { cursor: pointer; }
+#no-clicky:hover { cursor: pointer; }
 
 /* Menu contextuel de la roue crantée */
 .o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
