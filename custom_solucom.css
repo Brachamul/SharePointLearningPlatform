@@ -18,10 +18,12 @@
 
 #contentBox { min-width: 0; }
 
+#no-clicky { cursor: pointer; }
+
 /* Menu contextuel de la roue crantée */
 .o365cs-nav-contextMenu { display: none; } /* Par défaut, ce menu est caché */
-.o365cs-contextMenuItem { background-color: white; }
-.o365cs-contextMenuItem:hover { text-decoration: none; background-color: #cde6f7;} /* Quand on hover sur un des boutons */
+.o365button.o365cs-contextMenuItem { background-color: white; }
+.o365button.o365cs-contextMenuItem:hover { text-decoration: none; background-color: #cde6f7;} /* Quand on hover sur un des boutons */
 
 div[class^="o365cs-nav-"] { background-color: #0072c6; }
 

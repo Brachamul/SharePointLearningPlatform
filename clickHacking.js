@@ -5,7 +5,7 @@ jQuery(function() {
 		var context = $(this).attr("data-noclicky")
 		if (context) response = context
 		$(this).click(function(){ openModal(response); return false })
-		$(this).find('*').click(function(){ openModal(response); return false })
+		$(this).find('*:not(".no-clicky")').click(function(){ openModal(response); return false })
 	})
 
 	$('.no-clicky *').click(function(){ return false })
