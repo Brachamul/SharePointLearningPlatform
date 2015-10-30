@@ -11,83 +11,9 @@
 	<meta content="#0072C6" name="msapplication-TileColor">
 	<link href="https://solucomprojets-my.sharepoint.com/_layouts/15/images/favicon.ico?rev=40" id="favicon" rel=
 	"shortcut icon" type="image/vnd.microsoft.icon">
-	<script type="text/javascript">
-	// <![CDATA[
-	   var g_initUrl='';
-	   var hashSaverUrl = '';
-	   var g_MDSStartTime;var g_MinimalDownload;var g_mdsReady;var isStartPlt1;var startDate;var initContentComplete;
-	   (function()
-	   {
-	   function getHash(u) {
-	   if (null==u) return '';
-	   var i = u.indexOf('#');
-	   i = i > 0 ? i : u.length;
-	   return u.substr(i);
-	   };
-	   var url = window.location.href;
-	   if(typeof(url) != 'undefined'){
-	   var keyName = 'MDSLoginAllowedUrl';var idx = url.indexOf('&' + keyName + '=');
-	   if (idx != -1) {
-	   var idx2 = url.indexOf('&', idx + 1);
-	   if (idx2 == -1)
-		   idx2 = url.length;
-	   hashSaverUrl = url.substring(idx + keyName.length + 2, idx2);
-	   hashSaverUrl = decodeURIComponent(hashSaverUrl);
-	   }
-	   if (!hashSaverUrl || hashSaverUrl == '') {
-	   g_MDSStartTime = new Date();
-	   g_MinimalDownload = true;g_mdsReady=false;isStartPlt1 = true;startDate = g_MDSStartTime.valueOf().toString();
-	   initContentComplete=false;
-	   var hashParts=getHash(url).substr(1).split('#');
-	   var ch=hashParts[0];var localAnc=null; 
-	   for (var i=1;i<hashParts.length;i++){
-		 var s=hashParts[i];
-		 if (s.indexOf('=') == -1) {
-		   localAnc=s; 
-		   break;
-		 }
-	   }
-
-	   var requestUrlFull;
-	   if (typeof(ch) != 'undefined' && ch.length >= 2 && ch[0] === '/' && ch[1] === '/')
-	   {
-		   g_initUrl = ch.substr(1);
-		   requestUrlFull = getHash(url).substr(2);
-	   } else if (typeof(ch) != 'undefined' && ch.length >= 1 && ch[0] === '/')
-	   {
-		   var loc = window.location.pathname;
-		   var pos = loc.indexOf('/_layouts/15/start.aspx');
-		   var hash = getHash(url).substr(1);
-		   var hPos = hash.indexOf('#');
-		   hPos = hPos >= 0 ? hPos : typeof(hash) != 'undefined' ? hash.length : 0;
-		   g_initUrl = loc.substr(0, pos) + ch;
-		   requestUrlFull = g_initUrl + (typeof(hash) != 'undefined' ? hash.substr(hPos) : '');
-	   }
-
-	   if(g_initUrl){
-	   var delim=ch.indexOf('?')!=-1 ? '&' : '?';
-	   var xhr=new XMLHttpRequest();
-	   xhr.open('GET',g_initUrl+delim+'AjaxDelta=1&isStartPlt1=' + startDate, true);
-	   xhr.setRequestHeader('Pragma', 'SharePointAjaxDelta=|PERSONAL|DEMO_SOLUCOMPROJETS_ONMICROSOFT_COM|TEST:|PERSONAL|DEMO_SOLUCOMPROJETS_ONMICROSOFT_COM|TEST|_CATALOGS|MASTERPAGE|SEATTLE.MASTER:2.16.0.0.0.16.0.4316.1221.0.TRUE.STATIC.SHAREPOINTONLINE.COM|BLD.16.0.4316.1221.BUNDLE=TRUE.FLAGS=00.TAG=24:fr-FR:fr-FR:RW');
-	   xhr.onreadystatechange=function(){
-		if(xhr.readyState==4){
-		 if(g_mdsReady){
-		  asyncDeltaManager._navigate(requestUrlFull, localAnc);}
-		 else
-		 {g_mdsReady=true;}}};
-	   xhr.send(null);}
-		else
-	   {g_mdsReady=true;}
-	   }
-	   }
-	   })();
-	   // ]]>
-	</script>
 	<link href="Accueil_files\corev15.css" rel="stylesheet" type="text/css">
 	<link href="custom_solucom.css" rel="stylesheet" type="text/css">
 	<script src="Accueil_files/initstrings.js" type="text/javascript">
-	</script>
-	<script src="Accueil_files/init.js" type="text/javascript">
 	</script>
 	<script src="Accueil_files/msajaxbundle.js" type="text/javascript">
 	</script>
@@ -1510,7 +1436,7 @@
 											"Ribbon.EditingTools.CPInsert.Media.Media_ToolTip" aria-haspopup="true" class="ms-cui-ctl-large" href=
 											"javascript:;" id="Ribbon.EditingTools.CPInsert.Media.Media-Large" onclick="return false;" role=
 											"button"><span class="ms-cui-ctl-largeIconContainer"><span class=
-											" ms-cui-img-32by32 ms-cui-img-cont-float"><img alt="" src="/_layouts/15/images/publishing.png?rev=40"
+											" ms-cui-img-32by32 ms-cui-img-cont-float"><img alt="" src="Accueil_files/publishing.png"
 											style="top: -192px; left: -64px;"></span></span> <span class="ms-cui-ctl-largelabel">Vidéo et<br>
 											audio <span class=" ms-cui-img-5by3 ms-cui-img-cont-float"><img alt="" src=
 											"Accueil_files/formatmap16x16.png" style=
