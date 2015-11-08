@@ -83,4 +83,5 @@ function activateTab(tabName) {
 
 function trainingComplete() {
 	openModal("<p><strong>Félicitations !</strong></p><p>Vous avez accompli la mission, et vous connaissez <strong>un peu mieux</strong> SharePoint.</p><p>Vous pouvez maintenant continuer à explorer, ou quitter cette fenêtre.</p>")
+	$('#footer').html("Mission <strong>accomplie</strong> !")
 }
