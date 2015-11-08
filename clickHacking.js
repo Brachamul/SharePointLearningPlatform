@@ -10,11 +10,6 @@ jQuery(function() {
 
 	$('.no-clicky *').click(function(){ return false })
 
-	function openModal(text) {
-		$('#solucom-modal .content').html(text)
-		$('#solucom-modal').fadeIn('fast')
-	}
-
 	$('#solucom-modal').click( function() {
 		closeModal()
 	})
@@ -32,8 +27,3 @@ jQuery(function() {
 	})
 
 })
-
-function closeModal() {
-	$('#solucom-modal').fadeOut('fast')
-	$('.o365cs-nav-contextMenu').slideUp('fast')
-}

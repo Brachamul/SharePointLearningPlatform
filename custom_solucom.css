@@ -51,19 +51,13 @@ body { position: relative; }
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	box-shadow: 1px 1px 20px -5px #000;
+	display: table;
 }
 
-#solucom-modal img {
-	display: block;
-	float: left;
-	max-width: 40%;
-	max-height: 150px;
-}
+#solucom-modal .container > .subcontainer,
+#solucom-modal .container > .content { display: table-cell; vertical-align: top; }
 
-#solucom-modal .content {
-	float: left; width: calc(60% - 1rem);
-	padding: 1rem 0 1rem 1rem;
-}
+#solucom-modal .content { padding: 1rem; max-width: 480px; }
 
 #solucom-modal .content:before {
 	content: "Shupert the SharePoint Shrimp :";
@@ -71,6 +65,8 @@ body { position: relative; }
 	font-weight: bold;
 	color: #3FA9F5;
 }
+
+#solucom-modal img { max-height: 150px; }
 
 #solucom-modal .container:hover { cursor: pointer; }
 
@@ -91,6 +87,7 @@ body { position: relative; }
 hr { margin: 2em 0; }
 
 #footer { position: fixed; bottom: 0; color: white; text-align: center; padding: 1rem 2rem; background-color: #0072c6; box-shadow: 1px 1px 20px -5px #000; transition: all 0.5s; box-sizing: border-box; width: 100%; }
+#footer:hover { opacity: 0.1; }
 
 #welcome-news { margin: 1em 0; }
 #welcome-news .news-row { }
@@ -102,3 +99,47 @@ hr { margin: 2em 0; }
 
 
 .toggle-edit-mode { cursor: pointer; }
+
+
+
+/* expanding textarea plugin */
+
+textarea {
+	width: 100%;
+	resize: none; outline: none;
+	min-height: 50px;
+	padding: 0px;
+	border: 0px none;
+	margin: 1em 0;
+	transition: all .5s;
+	box-sizing: border-box;
+	max-width: 72rem; 
+}
+
+.edit-mode textarea {
+	padding: 5px 10px;
+	border: 1px solid #999;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.hiddendiv {
+	max-width: 72rem;
+    display: none;
+    white-space: pre-wrap;
+    width: 100%;
+    min-height: 50px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#edit-or-save-button.save { top: -341px !important; left: -409px !important; }
+#edit-or-save-button.edit { top: -171px !important; left: -137px !important; }
+
+.ms-cui-dd-arrow-button { height: 26px; }
+
+#RibbonContainer-TabRowRight { display: none !important; }
+
+h1.pageTitle { max-width: 72rem; margin-left: 0; }
